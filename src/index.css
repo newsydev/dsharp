@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gunmetal-900 text-white font-sans;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Mobile touch optimization */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10;
+  }
+  
+  .text-gradient {
+    @apply text-neutral;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-500 hover:-translate-y-1 hover:shadow-xl;
+  }
+  
+  .tactical-border {
+    @apply border border-steel-700;
+  }
+  
+  .sharp-corners {
+    @apply rounded-sharp;
+  }
+
+  /* Custom Scrollbar for Horizontal Lanes */
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .scrollbar-track-gunmetal-900::-webkit-scrollbar-track {
+    background: #0F1115;
+  }
+  
+  .scrollbar-thumb-steel-700::-webkit-scrollbar-thumb {
+    background: #3B3E45;
+    border-radius: 0;
+  }
+  
+  .scrollbar-thumb-steel-700::-webkit-scrollbar-thumb:hover {
+    background: #4B4E55;
+  }
+}
