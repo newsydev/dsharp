@@ -142,8 +142,8 @@ const Gallery = () => {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 py-24 w-full relative z-10">
-          <div className="mb-8 border-l-2 border-accent-red pl-6">
-            <span className="text-xs tracking-widest uppercase font-mono text-steel-400">
+          <div className="mb-8 border-l-2 border-accent-cyan pl-6">
+            <span className="text-sm tracking-widest uppercase font-mono text-accent-cyan">
               Zone G-06 / Facility Documentation
             </span>
           </div>
@@ -159,7 +159,7 @@ const Gallery = () => {
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
             {['500+ Images', '5 Zones', '25 Years', '100+ Events'].map((stat, i) => (
               <div key={i} className="border border-steel-700 p-4 text-center">
-                <div className="text-2xl font-bold font-heading text-accent-red">{stat.split(' ')[0]}</div>
+                <div className="text-2xl font-bold font-heading text-accent-orange">{stat.split(' ')[0]}</div>
                 <div className="text-xs text-steel-400 uppercase tracking-wider mt-1">{stat.split(' ').slice(1).join(' ')}</div>
               </div>
             ))}
@@ -177,7 +177,7 @@ const Gallery = () => {
                 onClick={() => setActiveZone(zone.code)}
                 className={`px-4 py-2 border transition-all duration-500 text-sm font-mono ${
                   activeZone === zone.code
-                    ? 'bg-accent-red border-accent-red text-neutral'
+                    ? 'bg-accent-orange border-accent-orange text-neutral'
                     : 'bg-gunmetal-800 border-steel-700 text-steel-300 hover:border-steel-500'
                 }`}
               >
@@ -207,8 +207,8 @@ const Gallery = () => {
                   <div className="text-6xl opacity-20">📷</div>
                   
                   {/* Zone Badge */}
-                  <div className="absolute top-3 left-3 border border-accent-red bg-gunmetal-900/90 px-3 py-1">
-                    <span className="text-xs font-mono text-accent-red">{doc.zone}</span>
+                  <div className="absolute top-3 left-3 border border-accent-cyan bg-gunmetal-900/90 px-3 py-1">
+                    <span className="text-xs font-mono text-accent-cyan">{doc.zone}</span>
                   </div>
 
                   {/* ID Badge */}
@@ -256,7 +256,7 @@ const Gallery = () => {
             <div>
               <h2 className="text-3xl lg:text-4xl font-heading font-bold text-neutral mb-6">Archive Purpose</h2>
               <div className="space-y-4 text-steel-200">
-                <p className="border-l-2 border-accent-red pl-6">
+              <p className="border-l-2 border-accent-cyan pl-6">
                   Visual documentation serves as operational record, training reference, and achievement catalog. All imagery catalogued by zone designation.
                 </p>
                 <p className="text-sm text-steel-300">
@@ -276,8 +276,8 @@ const Gallery = () => {
                   'High-resolution archival quality'
                 ].map((standard, i) => (
                   <div key={i} className="flex items-start gap-3 border-b border-steel-700 pb-3">
-                    <div className="w-6 h-6 border border-accent-red flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-accent-red text-xs">{i + 1}</span>
+                    <div className="w-6 h-6 border border-accent-cyan flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-accent-cyan text-xs">{i + 1}</span>
                     </div>
                     <span className="text-sm text-steel-200">{standard}</span>
                   </div>
@@ -304,7 +304,7 @@ const Gallery = () => {
 
             <Link
               to="/contact"
-              className="w-full lg:w-auto text-center bg-accent-red hover:bg-accent-redLight px-12 py-6 border-2 border-accent-redLight uppercase tracking-widest text-xs lg:text-sm font-mono transition-all duration-500"
+              className="w-full lg:w-auto text-center bg-accent-orange hover:bg-accent-orange/90 px-12 py-6 border-2 border-accent-orange uppercase tracking-widest text-xs lg:text-sm font-mono transition-all duration-500"
             >
               Start Training
             </Link>

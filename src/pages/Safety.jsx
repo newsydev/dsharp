@@ -131,14 +131,14 @@ const Safety = () => {
     <div className="min-h-screen bg-gunmetal-900 text-neutral">
       
       {/* MANUAL HEADER - REFERENCE STYLE */}
-      <section className="bg-gunmetal-800 border-b-2 border-accent-red py-12 lg:py-16">
+      <section className="bg-gunmetal-800 border-b-2 border-accent-cyan py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16">
           <div className="grid lg:grid-cols-5 gap-8">
             
             {/* Document Info */}
             <div className="lg:col-span-3">
-              <div className="border-l-2 border-accent-red pl-6 mb-6">
-                <div className="text-xs tracking-widest uppercase font-mono text-steel-400 mb-2">
+              <div className="border-l-2 border-accent-cyan pl-6 mb-6">
+                <div className="text-sm tracking-widest uppercase font-mono text-accent-cyan mb-2">
                   Zone S-05 / Safety Protocols
                 </div>
                 <div className="text-xs font-mono text-steel-500">Document Reference: SAFETY-MANUAL-2026</div>
@@ -157,7 +157,7 @@ const Safety = () => {
             <div className="lg:col-span-2 space-y-1">
               <div className="border border-steel-700 p-4 bg-gunmetal-900">
                 <div className="text-xs uppercase tracking-wider text-steel-400 mb-2">Document Status</div>
-                <div className="text-sm text-accent-red font-mono">ACTIVE / ENFORCED</div>
+                <div className="text-sm text-accent-lime font-mono">ACTIVE / ENFORCED</div>
               </div>
               <div className="border border-steel-700 p-4 bg-gunmetal-900">
                 <div className="text-xs uppercase tracking-wider text-steel-400 mb-2">Last Updated</div>
@@ -192,8 +192,8 @@ const Safety = () => {
                   
                   {/* Code */}
                   <div className="lg:col-span-1">
-                    <div className="border-2 border-accent-red inline-block px-4 py-2 mb-3">
-                      <span className="text-xl font-mono font-bold text-accent-red">{rule.code}</span>
+                    <div className="border-2 border-accent-orange inline-block px-4 py-2 mb-3">
+                      <span className="text-xl font-mono font-bold text-accent-orange">{rule.code}</span>
                     </div>
                     <div className="text-xl font-heading font-bold text-neutral">{rule.title}</div>
                   </div>
@@ -202,7 +202,7 @@ const Safety = () => {
                   <div className="lg:col-span-1 flex items-center">
                     <div>
                       <div className="text-xs uppercase tracking-wider text-steel-400 mb-2">Directive</div>
-                      <div className="text-sm text-neutral font-semibold border-l-2 border-accent-red pl-3">
+                      <div className="text-sm text-neutral font-semibold border-l-2 border-accent-orange pl-3">
                         {rule.directive}
                       </div>
                     </div>
@@ -242,8 +242,8 @@ const Safety = () => {
                       <div className="text-xs uppercase tracking-wider text-steel-400 mb-1">Phase {protocol.code}</div>
                       <div className="text-2xl font-heading font-bold text-neutral">{protocol.phase}</div>
                     </div>
-                    <div className="border border-accent-red px-4 py-2">
-                      <span className="text-xs font-mono text-accent-red">{protocol.procedures.length} STEPS</span>
+                    <div className="border border-accent-orange px-4 py-2">
+                      <span className="text-xs font-mono text-accent-orange">{protocol.procedures.length} STEPS</span>
                     </div>
                   </div>
                 </div>
@@ -260,8 +260,8 @@ const Safety = () => {
                           <span className="text-sm text-steel-200">{proc.task}</span>
                         </div>
                         <div className="flex-shrink-0">
-                          <div className="w-6 h-6 border-2 border-accent-red flex items-center justify-center">
-                            <span className="text-accent-red text-xs">□</span>
+                          <div className="w-6 h-6 border-2 border-accent-cyan flex items-center justify-center">
+                            <span className="text-accent-cyan text-xs">□</span>
                           </div>
                         </div>
                       </div>
@@ -288,12 +288,12 @@ const Safety = () => {
               <div key={emergency.code} className="border border-steel-700 bg-gunmetal-800">
                 
                 {/* Header */}
-                <div className="border-b-2 border-accent-red p-6 bg-accent-red/10">
-                  <div className="flex items-start justify-between mb-3">
-                    <div className="border-2 border-accent-red px-3 py-1 bg-gunmetal-900">
-                      <span className="text-sm font-mono font-bold text-accent-red">{emergency.code}</span>
+                <div className="border-b-2 border-accent-orange p-6 bg-accent-orange/10">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="border-2 border-accent-orange px-3 py-1 bg-gunmetal-900">
+                      <span className="text-sm font-mono font-bold text-accent-orange">{emergency.code}</span>
                     </div>
-                    <div className="text-xs uppercase tracking-wider text-accent-red font-mono">
+                    <div className="text-xs uppercase tracking-wider text-accent-orange font-mono">
                       {emergency.classification}
                     </div>
                   </div>
@@ -306,8 +306,8 @@ const Safety = () => {
                   <div className="space-y-3">
                     {emergency.response.map((step, stepIdx) => (
                       <div key={stepIdx} className="flex items-start gap-3">
-                        <div className="w-6 h-6 border border-accent-red flex items-center justify-center flex-shrink-0 bg-gunmetal-900">
-                          <span className="text-accent-red text-xs font-mono">{stepIdx + 1}</span>
+                        <div className="w-6 h-6 border border-accent-orange flex items-center justify-center flex-shrink-0 bg-gunmetal-900">
+                          <span className="text-accent-orange text-xs font-mono">{stepIdx + 1}</span>
                         </div>
                         <span className="text-sm text-steel-200">{step}</span>
                       </div>
@@ -326,11 +326,11 @@ const Safety = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
             <div className="flex items-start gap-6">
-              <div className="w-16 h-16 border-2 border-accent-red flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl text-accent-red">⚠</span>
+              <div className="w-16 h-16 border-2 border-accent-orange flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl text-accent-orange">⚠</span>
               </div>
               <div>
-                <div className="text-sm uppercase tracking-widest text-accent-red font-mono mb-2">Mandatory Compliance</div>
+                <div className="text-sm uppercase tracking-widest text-accent-orange font-mono mb-2">Mandatory Compliance</div>
                 <p className="text-steel-200">
                   All participants must acknowledge and sign safety protocols before range access. Violations result in immediate suspension.
                 </p>
@@ -339,7 +339,7 @@ const Safety = () => {
             <div className="flex-shrink-0">
               <Link
                 to="/contact"
-                className="border-2 border-accent-red hover:bg-accent-red/10 px-8 py-3 text-xs uppercase tracking-widest font-mono transition-all duration-500 inline-block text-center"
+                className="border-2 border-accent-orange hover:bg-accent-orange/10 px-8 py-3 text-xs uppercase tracking-widest font-mono transition-all duration-500 inline-block text-center"
               >
                 Enroll & Acknowledge →
               </Link>

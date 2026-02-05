@@ -22,8 +22,8 @@ const Home = () => {
         {/* Left Panel - Typography & Philosophy */}
         <div className="w-full lg:w-1/2 bg-gunmetal-900 flex items-center px-6 sm:px-8 lg:px-16 py-24 lg:py-0 lg:border-r border-steel-700">
           <div className="max-w-xl">
-            <div className="mb-6 border-l-2 border-accent-red pl-4">
-              <span className="text-xs tracking-widest uppercase font-mono text-steel-400">
+            <div className="mb-6 border-l-2 border-accent-cyan pl-4">
+              <span className="text-xs tracking-widest uppercase font-mono text-accent-cyan">
                 Est. 2018 / Facility R-01
               </span>
             </div>
@@ -35,27 +35,27 @@ const Home = () => {
             </h1>
 
             <div className="space-y-6 text-steel-200 border-l border-steel-700 pl-6">
-              <p className="text-lg leading-relaxed">
+              <p className="text-xl leading-relaxed">
                 Elite marksmanship training through systematic fundamentals. 
                 No shortcuts. No games. Only professional-grade skill development.
               </p>
               
               <div className="flex items-center space-x-4 pt-4">
-                <div className="w-12 h-0.5 bg-accent-red" />
-                <span className="text-sm uppercase tracking-wider font-mono">Military Standard</span>
+                <div className="w-12 h-0.5 bg-accent-cyan" />
+                <span className="text-base uppercase tracking-wider font-mono text-accent-cyan">Military Standard</span>
               </div>
             </div>
 
             <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <Link 
                 to="/programs"
-                className="bg-accent-red hover:bg-accent-redLight px-8 py-4 border border-accent-redLight uppercase tracking-widest text-sm font-mono transition-all duration-500"
+                className="bg-accent-orange hover:bg-accent-orange/90 px-8 py-4 border border-accent-orange uppercase tracking-widest text-sm font-mono transition-all duration-500 hover:shadow-lg hover:shadow-accent-orange/50"
               >
                 View Training Zones
               </Link>
               <Link
                 to="/safety"
-                className="border border-steel-700 hover:border-steel-500 px-8 py-4 uppercase tracking-widest text-sm font-mono transition-all duration-500 hover:bg-steel-900/50"
+                className="border border-accent-cyan hover:border-accent-cyan hover:text-accent-cyan px-8 py-4 uppercase tracking-widest text-sm font-mono transition-all duration-500 hover:bg-accent-cyan/10"
               >
                 Safety Protocols
               </Link>
@@ -64,16 +64,16 @@ const Home = () => {
             {/* Facility Stats */}
             <div className="mt-12 lg:mt-16 grid grid-cols-3 gap-4 sm:gap-6 border-t border-steel-700 pt-6 lg:pt-8">
               <div className="hover:bg-gunmetal-800/50 p-2 -m-2 transition-colors duration-500">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold font-heading text-neutral">2.8K</div>
-                <div className="text-[10px] sm:text-xs uppercase tracking-wider text-steel-500 mt-1">Members Trained</div>
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-neutral">2.8K</div>
+                <div className="text-sm uppercase tracking-wider text-steel-500 mt-2">Members Trained</div>
               </div>
               <div className="hover:bg-gunmetal-800/50 p-2 -m-2 transition-colors duration-500">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold font-heading text-neutral">15+</div>
-                <div className="text-[10px] sm:text-xs uppercase tracking-wider text-steel-500 mt-1">Certified Coaches</div>
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-neutral">15+</div>
+                <div className="text-sm uppercase tracking-wider text-steel-500 mt-2">Certified Coaches</div>
               </div>
               <div className="hover:bg-gunmetal-800/50 p-2 -m-2 transition-colors duration-500">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold font-heading text-neutral">98%</div>
-                <div className="text-[10px] sm:text-xs uppercase tracking-wider text-steel-500 mt-1">Qualification Rate</div>
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-neutral">98%</div>
+                <div className="text-sm uppercase tracking-wider text-steel-500 mt-2">Qualification Rate</div>
               </div>
             </div>
           </div>
@@ -86,10 +86,10 @@ const Home = () => {
           </div>
           
           {/* Technical Overlay */}
-          <div className="absolute top-4 right-4 lg:top-8 lg:right-8 bg-gunmetal-900/95 border border-steel-600 p-3 lg:p-4 backdrop-blur-md shadow-xl">
-            <div className="text-[10px] lg:text-xs uppercase tracking-wider text-steel-400 mb-2">Equipment ID</div>
-            <div className="font-mono text-xs lg:text-sm text-neutral">MODEL-G19-V3</div>
-            <div className="text-[10px] lg:text-xs text-steel-500 mt-2">9mm / Semi-Auto</div>
+          <div className="absolute top-4 right-4 lg:top-8 lg:right-8 bg-gunmetal-900/95 border border-steel-600 p-4 lg:p-5 backdrop-blur-md shadow-xl">
+            <div className="text-sm uppercase tracking-wider text-steel-400 mb-2">Equipment ID</div>
+            <div className="font-mono text-base lg:text-lg text-neutral">MODEL-G19-V3</div>
+            <div className="text-sm text-steel-500 mt-2">9mm / Semi-Auto</div>
           </div>
 
           {/* Grid Overlay */}
@@ -115,10 +115,10 @@ const Home = () => {
       <section className="min-h-screen bg-gunmetal-800 border-y border-steel-700 overflow-hidden">
         <div className="px-6 sm:px-8 lg:px-16 py-12 lg:py-16">
           <div className="mb-8 lg:mb-12">
-            <span className="text-xs tracking-widest uppercase font-mono text-steel-400">
+            <span className="text-sm tracking-widest uppercase font-mono text-steel-400">
               Zone T-02 / Training Programs
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-heading font-bold text-neutral mt-4">
+            <h2 className="text-4xl sm:text-5xl lg:text-7xl font-heading font-bold text-neutral mt-4">
               SELECT YOUR LANE
             </h2>
           </div>
@@ -168,8 +168,8 @@ const Home = () => {
               >
                 <div className="flex items-start justify-between mb-6">
                   <div>
-                    <div className="text-xs font-mono tracking-widest text-steel-400 mb-2">{lane.code}</div>
-                    <h3 className="text-3xl font-heading font-bold text-neutral group-hover:text-accent-red transition-colors duration-500">
+                    <div className="text-sm font-mono tracking-widest text-accent-cyan mb-2">{lane.code}</div>
+                    <h3 className="text-3xl font-heading font-bold text-neutral group-hover:text-accent-orange transition-colors duration-500">
                       {lane.name}
                     </h3>
                   </div>
@@ -179,24 +179,24 @@ const Home = () => {
                 </div>
 
                 <div className="space-y-4 mb-6">
-                  <div className="flex justify-between text-sm">
+                  <div className="flex justify-between text-base">
                     <span className="text-steel-400">Level:</span>
                     <span className="text-neutral font-mono">{lane.level}</span>
                   </div>
-                  <div className="flex justify-between text-sm">
+                  <div className="flex justify-between text-base">
                     <span className="text-steel-400">Duration:</span>
                     <span className="text-neutral font-mono">{lane.duration}</span>
                   </div>
                 </div>
 
-                <p className="text-steel-300 text-sm leading-relaxed mb-6 border-l border-steel-700 pl-4">
+                <p className="text-steel-300 text-base leading-relaxed mb-6 border-l border-steel-700 pl-4">
                   {lane.description}
                 </p>
 
                 <div className="space-y-2">
                   {lane.specs.map((spec, j) => (
-                    <div key={j} className="flex items-center space-x-2 text-sm">
-                      <div className="w-1 h-1 bg-accent-red" />
+                    <div key={j} className="flex items-center space-x-2 text-base">
+                      <div className="w-1 h-1 bg-accent-cyan" />
                       <span className="text-steel-400">{spec}</span>
                     </div>
                   ))}
@@ -204,7 +204,7 @@ const Home = () => {
 
                 <Link
                   to="/programs"
-                  className="mt-8 w-full border border-steel-700 hover:border-accent-red hover:bg-accent-red/10 py-3 text-center uppercase tracking-widest text-xs font-mono transition-all duration-500 block"
+                  className="mt-8 w-full border border-steel-700 hover:border-accent-cyan hover:bg-accent-cyan/10 py-3 text-center uppercase tracking-widest text-xs font-mono transition-all duration-500 block"
                 >
                   Enter Lane
                 </Link>
@@ -230,7 +230,7 @@ const Home = () => {
             ARSENAL<br />OVERVIEW
           </h2>
 
-          <p className="text-steel-300 leading-relaxed mb-8 border-l-2 border-accent-red pl-6">
+          <p className="text-steel-300 leading-relaxed mb-8 border-l-2 border-accent-cyan pl-6">
             Professional-grade firearms for training and certification. Each weapon selected for reliability, safety, and educational value.
           </p>
 
@@ -247,7 +247,7 @@ const Home = () => {
                   <div className="text-xs text-steel-500 font-mono mt-1">{weapon.type}</div>
                 </div>
                 <div className={`text-xs uppercase tracking-wider font-mono ${
-                  weapon.status === 'Available' ? 'text-accent-red' : 'text-steel-500'
+                  weapon.status === 'Available' ? 'text-accent-lime' : 'text-steel-500'
                 }`}>
                   {weapon.status}
                 </div>
@@ -257,7 +257,7 @@ const Home = () => {
 
           <Link
             to="/arsenal"
-            className="mt-8 bg-accent-red hover:bg-accent-redLight px-8 py-4 border border-accent-redLight uppercase tracking-widest text-sm font-mono transition-all duration-500 inline-block"
+            className="mt-8 bg-accent-orange hover:bg-accent-orange/90 px-8 py-4 border border-accent-orange uppercase tracking-widest text-sm font-mono transition-all duration-500 inline-block"
           >
             View Full Arsenal
           </Link>
@@ -301,12 +301,12 @@ const Home = () => {
               <h2 className="text-5xl sm:text-6xl lg:text-8xl font-heading font-bold text-neutral leading-none mb-8">
                 WORLD<br />CLASS<br />FACILITY
               </h2>
-              <div className="w-32 h-0.5 bg-accent-red" />
+              <div className="w-32 h-0.5 bg-accent-cyan" />
             </div>
 
             {/* Right - Misaligned Content Grid */}
             <div className="space-y-12 lg:space-y-16 pt-8 lg:pt-24">
-              <div className="border-l-2 border-accent-red pl-8">
+              <div className="border-l-2 border-accent-orange pl-8">
                 <h3 className="text-2xl font-heading font-bold text-neutral mb-4">Safety First</h3>
                 <p className="text-steel-300 leading-relaxed">
                   Range Safety Officers on duty at all times. Comprehensive safety briefings before every session. Zero-tolerance policy on violations.
@@ -333,19 +333,19 @@ const Home = () => {
           <div className="mt-16 lg:mt-24 bg-gunmetal-900 border border-steel-700 p-6 lg:p-12 max-w-4xl lg:ml-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold font-heading text-accent-red mb-2">12</div>
+                <div className="text-4xl font-bold font-heading text-accent-cyan mb-2">12</div>
                 <div className="text-xs uppercase tracking-wider text-steel-400">Shooting Lanes</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold font-heading text-accent-red mb-2">50K</div>
+                <div className="text-4xl font-bold font-heading text-accent-cyan mb-2">50K</div>
                 <div className="text-xs uppercase tracking-wider text-steel-400">Rounds / Month</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold font-heading text-accent-red mb-2">24/7</div>
+                <div className="text-4xl font-bold font-heading text-accent-orange mb-2">24/7</div>
                 <div className="text-xs uppercase tracking-wider text-steel-400">Security</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold font-heading text-accent-red mb-2">100%</div>
+                <div className="text-4xl font-bold font-heading text-accent-lime mb-2">100%</div>
                 <div className="text-xs uppercase tracking-wider text-steel-400">Compliance</div>
               </div>
             </div>
@@ -383,7 +383,7 @@ const Home = () => {
             <div className="lg:w-1/2 flex flex-col items-start space-y-4 lg:space-y-6">
               <Link
                 to="/contact"
-                className="w-full lg:w-auto text-center bg-accent-red hover:bg-accent-redLight px-8 lg:px-12 py-4 lg:py-6 border-2 border-accent-redLight uppercase tracking-widest text-xs lg:text-sm font-mono transition-all duration-500"
+                className="w-full lg:w-auto text-center bg-accent-orange hover:bg-accent-orange/90 px-8 lg:px-12 py-4 lg:py-6 border-2 border-accent-orange uppercase tracking-widest text-xs lg:text-sm font-mono transition-all duration-500"
               >
                 Schedule Visit
               </Link>
@@ -395,7 +395,7 @@ const Home = () => {
               </Link>
               
               <div className="mt-8 flex items-center space-x-4">
-                <div className="w-2 h-2 bg-accent-red animate-pulse" />
+                <div className="w-2 h-2 bg-accent-lime animate-pulse" />
                 <span className="text-sm text-steel-400 uppercase tracking-wider">Currently Enrolling</span>
               </div>
             </div>

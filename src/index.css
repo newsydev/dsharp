@@ -12,6 +12,8 @@
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+    line-height: 1.7;
   }
   
   /* Mobile touch optimization */

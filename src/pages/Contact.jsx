@@ -79,8 +79,8 @@ const Contact = () => {
         <div className="lg:w-3/5 bg-gunmetal-900 p-6 sm:p-8 lg:p-16 border-b lg:border-b-0 lg:border-r border-steel-700">
           
           <div className="max-w-2xl">
-            <div className="mb-8 border-l-2 border-accent-red pl-6">
-              <span className="text-xs tracking-widest uppercase font-mono text-steel-400">
+            <div className="mb-8 border-l-2 border-accent-cyan pl-6">
+              <span className="text-sm tracking-widest uppercase font-mono text-accent-cyan">
                 Zone E-07 / Enrollment
               </span>
             </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-red px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm"
+                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-cyan px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm"
                   placeholder="Enter full name"
                 />
               </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-red px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm"
+                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-cyan px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm"
                   placeholder="your@email.com"
                 />
               </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-red px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm"
+                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-cyan px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm"
                   placeholder="+1 (555) 000-0000"
                 />
               </div>
@@ -154,7 +154,7 @@ const Contact = () => {
                   value={formData.program}
                   onChange={handleChange}
                   required
-                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-red px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm"
+                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-cyan px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm"
                 >
                   {programs.map((prog) => (
                     <option key={prog.value} value={prog.value}>
@@ -174,7 +174,7 @@ const Contact = () => {
                   value={formData.experience}
                   onChange={handleChange}
                   required
-                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-red px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm"
+                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-cyan px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm"
                 >
                   {experienceLevels.map((exp) => (
                     <option key={exp.value} value={exp.value}>
@@ -194,7 +194,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows="4"
-                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-red px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm resize-none"
+                  className="w-full bg-gunmetal-800 border border-steel-700 focus:border-accent-cyan px-4 py-3 text-neutral outline-none transition-all duration-500 font-mono text-sm resize-none"
                   placeholder="Questions, special requirements, or additional details..."
                 />
               </div>
@@ -202,8 +202,8 @@ const Contact = () => {
               {/* Submit Button */}
               <div className="pt-6">
                 {formStatus === 'success' ? (
-                  <div className="border-2 border-accent-red bg-accent-red/10 px-8 py-4 text-center">
-                    <span className="text-accent-red font-mono text-sm uppercase tracking-widest">
+                  <div className="border-2 border-accent-lime bg-accent-lime/10 px-8 py-4 text-center">
+                    <span className="text-accent-lime font-mono text-sm uppercase tracking-widest">
                       ✓ Inquiry Submitted - Response Within 24h
                     </span>
                   </div>
@@ -214,7 +214,7 @@ const Contact = () => {
                     className={`w-full px-8 py-4 border-2 uppercase tracking-widest text-sm font-mono transition-all duration-500 ${
                       formStatus === 'submitting'
                         ? 'bg-gunmetal-800 border-steel-700 text-steel-500 cursor-not-allowed'
-                        : 'bg-accent-red hover:bg-accent-redLight border-accent-redLight text-neutral'
+                        : 'bg-accent-orange hover:bg-accent-orange/90 border-accent-orange text-neutral'
                     }`}
                   >
                     {formStatus === 'submitting' ? 'Submitting...' : 'Submit Enrollment Inquiry'}
@@ -262,13 +262,13 @@ const Contact = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3 border-b border-steel-700 pb-3">
                   <span className="text-steel-500 text-sm">Phone:</span>
-                  <a href={`tel:${facilityInfo.phone}`} className="text-accent-red font-mono text-sm hover:underline">
+                  <a href={`tel:${facilityInfo.phone}`} className="text-accent-cyan font-mono text-sm hover:underline">
                     {facilityInfo.phone}
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-steel-500 text-sm">Email:</span>
-                  <a href={`mailto:${facilityInfo.email}`} className="text-accent-red font-mono text-sm hover:underline break-all">
+                  <a href={`mailto:${facilityInfo.email}`} className="text-accent-cyan font-mono text-sm hover:underline break-all">
                     {facilityInfo.email}
                   </a>
                 </div>
@@ -300,19 +300,19 @@ const Contact = () => {
               <div className="space-y-2">
                 <Link
                   to="/programs"
-                  className="block border border-steel-700 hover:border-accent-red hover:bg-gunmetal-800 px-4 py-3 text-sm font-mono transition-all duration-500"
+                  className="block border border-steel-700 hover:border-accent-cyan hover:bg-gunmetal-800 px-4 py-3 text-sm font-mono transition-all duration-500"
                 >
                   View Programs →
                 </Link>
                 <Link
                   to="/safety"
-                  className="block border border-steel-700 hover:border-accent-red hover:bg-gunmetal-800 px-4 py-3 text-sm font-mono transition-all duration-500"
+                  className="block border border-steel-700 hover:border-accent-cyan hover:bg-gunmetal-800 px-4 py-3 text-sm font-mono transition-all duration-500"
                 >
                   Safety Protocols →
                 </Link>
                 <Link
                   to="/coaches"
-                  className="block border border-steel-700 hover:border-accent-red hover:bg-gunmetal-800 px-4 py-3 text-sm font-mono transition-all duration-500"
+                  className="block border border-steel-700 hover:border-accent-cyan hover:bg-gunmetal-800 px-4 py-3 text-sm font-mono transition-all duration-500"
                 >
                   Meet Coaches →
                 </Link>
@@ -320,10 +320,10 @@ const Contact = () => {
             </div>
 
             {/* Status Indicator */}
-            <div className="border-2 border-accent-red bg-accent-red/10 p-6">
+            <div className="border-2 border-accent-lime bg-accent-lime/10 p-6">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-3 h-3 bg-accent-red rounded-full animate-pulse" />
-                <span className="text-sm uppercase tracking-widest text-accent-red font-mono">Facility Status</span>
+                <div className="w-3 h-3 bg-accent-lime rounded-full animate-pulse" />
+                <span className="text-sm uppercase tracking-widest text-accent-lime font-mono">Facility Status</span>
               </div>
               <div className="text-2xl font-heading font-bold text-neutral">OPERATIONAL</div>
               <div className="text-xs text-steel-400 mt-2">Accepting new enrollments</div>

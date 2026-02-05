@@ -18,8 +18,8 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left - Zone ID & Large Typography */}
             <div>
-              <div className="mb-8 border-l-2 border-accent-red pl-4">
-                <span className="text-xs tracking-widest uppercase font-mono text-steel-400">
+              <div className="mb-8 border-l-2 border-accent-cyan pl-4">
+                <span className="text-sm tracking-widest uppercase font-mono text-accent-cyan">
                   Facility Information / About
                 </span>
               </div>
@@ -30,7 +30,7 @@ const About = () => {
                 MANSHIP
               </h1>
 
-              <div className="w-32 h-0.5 bg-accent-red mb-8" />
+              <div className="w-32 h-0.5 bg-accent-cyan mb-8" />
 
               <p className="text-xl text-steel-300 leading-relaxed border-l border-steel-700 pl-6">
                 Established 2018. Military-grade facility dedicated to professional firearm training and Olympic-standard marksmanship development.
@@ -64,13 +64,13 @@ const About = () => {
                 </div>
                 <div className="flex justify-between items-center border-b border-steel-700 pb-4">
                   <span className="text-steel-400 text-sm">Safety Record</span>
-                  <span className="text-accent-red font-mono">100%</span>
+                  <span className="text-accent-lime font-mono">100%</span>
                 </div>
               </div>
 
               <div className="mt-8 pt-8 border-t border-steel-700">
                 <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-accent-red animate-pulse" />
+                  <div className="w-2 h-2 bg-accent-lime animate-pulse" />
                   <span className="text-xs text-steel-400 uppercase tracking-wider">Operational Status: Active</span>
                 </div>
               </div>
@@ -98,13 +98,13 @@ const About = () => {
 
             {/* Mission Content - Right Columns */}
             <div className="lg:col-span-3 space-y-8">
-              <p className="text-xl lg:text-2xl text-steel-300 leading-relaxed border-l-2 border-accent-red pl-6 lg:pl-8">
+              <p className="text-xl lg:text-2xl text-steel-300 leading-relaxed border-l-2 border-accent-orange pl-6 lg:pl-8">
                 To provide world-class firearm training in a disciplined, safety-first environment where precision, respect, and professionalism define every interaction.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 pt-8">
                 <div className="bg-gunmetal-900 border border-steel-700 p-6 lg:p-8">
-                  <div className="text-4xl font-bold font-heading text-accent-red mb-4">01</div>
+                  <div className="text-4xl font-bold font-heading text-accent-orange mb-4">01</div>
                   <h3 className="text-xl font-heading font-bold text-neutral mb-4">Safety Above All</h3>
                   <p className="text-steel-400 text-sm leading-relaxed">
                     Zero-tolerance safety protocols enforced by certified Range Safety Officers. Every session begins with comprehensive briefings.
@@ -112,7 +112,7 @@ const About = () => {
                 </div>
 
                 <div className="bg-gunmetal-900 border border-steel-700 p-6 lg:p-8">
-                  <div className="text-4xl font-bold font-heading text-accent-red mb-4">02</div>
+                  <div className="text-4xl font-bold font-heading text-accent-orange mb-4">02</div>
                   <h3 className="text-xl font-heading font-bold text-neutral mb-4">Professional Standards</h3>
                   <p className="text-steel-400 text-sm leading-relaxed">
                     Military and law enforcement-grade training methodology. Olympic-level facility specifications. Competition-ready equipment.
@@ -120,7 +120,7 @@ const About = () => {
                 </div>
 
                 <div className="bg-gunmetal-900 border border-steel-700 p-6 lg:p-8">
-                  <div className="text-4xl font-bold font-heading text-accent-red mb-4">03</div>
+                  <div className="text-4xl font-bold font-heading text-accent-orange mb-4">03</div>
                   <h3 className="text-xl font-heading font-bold text-neutral mb-4">Systematic Development</h3>
                   <p className="text-steel-400 text-sm leading-relaxed">
                     Progressive skill-building curriculum from fundamentals to advanced marksmanship. Structured pathways for every skill level.
@@ -128,7 +128,7 @@ const About = () => {
                 </div>
 
                 <div className="bg-gunmetal-900 border border-steel-700 p-6 lg:p-8">
-                  <div className="text-4xl font-bold font-heading text-accent-red mb-4">04</div>
+                  <div className="text-4xl font-bold font-heading text-accent-orange mb-4">04</div>
                   <h3 className="text-xl font-heading font-bold text-neutral mb-4">Community Excellence</h3>
                   <p className="text-steel-400 text-sm leading-relaxed">
                     Building a community of responsible, skilled marksmen. Peer learning, mentorship programs, and competitive opportunities.
@@ -166,7 +166,7 @@ const About = () => {
             ].map((item, i) => (
               <div key={i} className="flex flex-col sm:flex-row border-b border-steel-700 hover:bg-gunmetal-800 transition-all duration-500">
                 <div className="w-full sm:w-24 flex-shrink-0 p-4 sm:p-6 sm:border-r border-steel-700">
-                  <span className="text-xl lg:text-2xl font-bold font-heading text-accent-red">{item.year}</span>
+                  <span className="text-xl lg:text-2xl font-bold font-heading text-accent-cyan">{item.year}</span>
                 </div>
                 <div className="flex-1 p-4 sm:p-6">
                   <h3 className="text-xl font-heading font-bold text-neutral mb-2">{item.event}</h3>
@@ -201,9 +201,9 @@ const About = () => {
               { value: '6', label: 'Years Operational', icon: '📅' },
               { value: '40+', label: 'Firearms Available', icon: '🔧' }
             ].map((stat, i) => (
-              <div key={i} className="bg-gunmetal-900 border border-steel-700 p-4 sm:p-6 lg:p-8 hover:border-accent-red transition-all duration-500">
+              <div key={i} className="bg-gunmetal-900 border border-steel-700 p-4 sm:p-6 lg:p-8 hover:border-accent-cyan transition-all duration-500">
                 <div className="text-2xl sm:text-3xl lg:text-4xl mb-2 lg:mb-4">{stat.icon}</div>
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-accent-red mb-2">{stat.value}</div>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-accent-orange mb-2">{stat.value}</div>
                 <div className="text-[10px] sm:text-xs uppercase tracking-wider text-steel-400">{stat.label}</div>
               </div>
             ))}
@@ -231,7 +231,7 @@ const About = () => {
               { org: 'OSHA', full: 'Occupational Safety', cert: '100% Compliant' }
             ].map((badge, i) => (
               <div key={i} className="border border-steel-700 p-4 sm:p-6 text-center">
-                <div className="text-2xl lg:text-3xl font-bold font-heading text-accent-red mb-2">{badge.org}</div>
+                <div className="text-2xl lg:text-3xl font-bold font-heading text-accent-orange mb-2">{badge.org}</div>
                 <div className="text-xs sm:text-sm text-neutral mb-1">{badge.full}</div>
                 <div className="text-[10px] sm:text-xs text-steel-400 uppercase tracking-wider">{badge.cert}</div>
               </div>
@@ -256,7 +256,7 @@ const About = () => {
             <div className="flex flex-col gap-4 w-full lg:w-auto">
               <Link
                 to="/contact"
-                className="w-full lg:w-auto text-center bg-accent-red hover:bg-accent-redLight px-8 lg:px-12 py-4 lg:py-6 border-2 border-accent-redLight uppercase tracking-widest text-xs lg:text-sm font-mono transition-all duration-500"
+                className="w-full lg:w-auto text-center bg-accent-orange hover:bg-accent-orange/90 px-8 lg:px-12 py-4 lg:py-6 border-2 border-accent-orange uppercase tracking-widest text-xs lg:text-sm font-mono transition-all duration-500"
               >
                 Enroll Now
               </Link>

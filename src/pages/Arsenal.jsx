@@ -134,23 +134,23 @@ const Arsenal = () => {
           </div>
 
           {/* Technical Overlay - Bottom Left */}
-          <div className="absolute bottom-8 left-8 bg-gunmetal-900/90 backdrop-blur-md border border-steel-700 p-6 max-w-sm z-10">
-            <div className="text-xs uppercase tracking-widest text-steel-400 mb-2">Zone A-03 / Arsenal</div>
-            <div className="text-2xl font-heading font-bold text-neutral mb-3">Equipment Catalog</div>
-            <div className="text-sm text-steel-300 border-l-2 border-accent-red pl-3">
+          <div className="absolute bottom-8 left-8 bg-gunmetal-900/90 backdrop-blur-md border border-accent-cyan p-6 max-w-sm z-10">
+            <div className="text-sm uppercase tracking-widest text-accent-cyan mb-2">Zone A-03 / Arsenal</div>
+            <div className="text-3xl font-heading font-bold text-neutral mb-3">Equipment Catalog</div>
+            <div className="text-base text-steel-300 border-l-2 border-accent-orange pl-3 leading-relaxed">
               Professional-grade firearms and accessories. All equipment maintained to operational standards.
             </div>
             <div className="mt-4 grid grid-cols-3 gap-3">
               <div className="text-center">
-                <div className="text-xl font-bold font-heading text-accent-red">12</div>
-                <div className="text-xs text-steel-500 uppercase">Models</div>
+                <div className="text-3xl font-bold font-heading text-accent-cyan">12</div>
+                <div className="text-sm text-steel-500 uppercase">Models</div>
               </div>
               <div className="text-center">
-                <div className="text-xl font-bold font-heading text-accent-red">3</div>
-                <div className="text-xs text-steel-500 uppercase">Categories</div>
+                <div className="text-3xl font-bold font-heading text-accent-orange">3</div>
+                <div className="text-sm text-steel-500 uppercase">Categories</div>
               </div>
               <div className="text-center">
-                <div className="text-xl font-bold font-heading text-accent-red">100%</div>
+                <div className="text-xl font-bold font-heading text-accent-lime">100%</div>
                 <div className="text-xs text-steel-500 uppercase">Ready</div>
               </div>
             </div>
@@ -160,7 +160,7 @@ const Arsenal = () => {
         {/* RIGHT: Zone Header Info */}
         <div className="lg:w-1/3 bg-gunmetal-900 flex items-center p-6 sm:p-8 lg:p-12">
           <div>
-            <div className="mb-6 border-l-2 border-accent-red pl-4">
+            <div className="mb-6 border-l-2 border-accent-cyan pl-4">
               <span className="text-xs tracking-widest uppercase font-mono text-steel-400">
                 Zone A-03 / Equipment
               </span>
@@ -181,7 +181,7 @@ const Arsenal = () => {
               </div>
               <div className="flex justify-between border-b border-steel-700 pb-2">
                 <span className="text-steel-400">Availability</span>
-                <span className="text-accent-red font-mono">In Stock</span>
+                <span className="text-accent-lime font-mono">In Stock</span>
               </div>
               <div className="flex justify-between border-b border-steel-700 pb-2">
                 <span className="text-steel-400">Status</span>
@@ -192,7 +192,7 @@ const Arsenal = () => {
             <div className="mt-8 pt-8 border-t border-steel-700">
               <Link
                 to="/contact"
-                className="w-full bg-accent-red hover:bg-accent-redLight border border-accent-redLight px-8 py-4 text-center uppercase tracking-widest text-xs font-mono transition-all duration-500 inline-block"
+                className="w-full bg-accent-orange hover:bg-accent-orange/90 border border-accent-orange px-8 py-4 text-center uppercase tracking-widest text-xs font-mono transition-all duration-500 inline-block"
               >
                 Equipment Inquiry
               </Link>
@@ -229,7 +229,7 @@ const Arsenal = () => {
                     {/* Col 1: Designation */}
                     <div className="lg:col-span-1">
                       <div className="text-xs uppercase tracking-wider text-steel-400 mb-1">Designation</div>
-                      <div className="text-2xl font-heading font-bold text-accent-red mb-2">{item.designation}</div>
+                      <div className="text-2xl font-heading font-bold text-accent-cyan mb-2">{item.designation}</div>
                       <div className="text-sm font-mono text-steel-500">{item.status}</div>
                     </div>
 
@@ -273,13 +273,13 @@ const Arsenal = () => {
                       <div>
                         <div className="text-xs uppercase tracking-wider text-steel-400 mb-1">Availability</div>
                         <div className={`text-sm font-mono ${
-                          item.availability === 'In Stock' ? 'text-accent-red' : 'text-steel-500'
+                          item.availability === 'In Stock' ? 'text-accent-lime' : 'text-steel-500'
                         }`}>
                           {item.availability}
                         </div>
                       </div>
                       <div className="mt-4 lg:mt-0">
-                        <button className="w-full border border-steel-700 hover:border-accent-red hover:bg-gunmetal-800 px-4 py-2 text-xs uppercase tracking-wider transition-all duration-500">
+                        <button className="w-full border border-steel-700 hover:border-accent-cyan hover:bg-gunmetal-800 px-4 py-2 text-xs uppercase tracking-wider transition-all duration-500">
                           Details →
                         </button>
                       </div>
@@ -299,12 +299,12 @@ const Arsenal = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16">
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
             <div className="flex-shrink-0">
-              <div className="w-16 h-16 border-2 border-accent-red flex items-center justify-center">
-                <span className="text-2xl text-accent-red">⚠</span>
+              <div className="w-16 h-16 border-2 border-accent-orange flex items-center justify-center">
+                <span className="text-2xl text-accent-orange">⚠</span>
               </div>
             </div>
             <div className="flex-1">
-              <div className="text-sm uppercase tracking-widest text-accent-red font-mono mb-2">Safety Protocol</div>
+              <div className="text-sm uppercase tracking-widest text-accent-orange font-mono mb-2">Safety Protocol</div>
               <p className="text-steel-200">
                 All equipment used exclusively for training and competition under strict supervision. Safety certifications required for equipment access. Unauthorized use prohibited.
               </p>

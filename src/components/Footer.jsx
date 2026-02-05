@@ -10,30 +10,30 @@ const Footer = () => {
           {/* About */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-accent-red rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-accent-orange rounded-lg flex items-center justify-center">
                 <span className="text-xl">🎯</span>
               </div>
               <span className="text-lg font-heading font-bold">Elite Shooting Academy</span>
             </div>
-            <p className="text-steel-300 text-sm">
+            <p className="text-steel-300 text-base leading-relaxed">
               Training champions through discipline, precision, and Olympic-standard excellence.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4 text-lg">Quick Links</h3>
             <div className="space-y-2">
-              <Link to="/about" className="block text-steel-300 hover:text-white transition-colors text-sm">
+              <Link to="/about" className="block text-steel-300 hover:text-white transition-colors text-base">
                 About Us
               </Link>
-              <Link to="/programs" className="block text-steel-300 hover:text-white transition-colors text-sm">
+              <Link to="/programs" className="block text-steel-300 hover:text-white transition-colors text-base">
                 Training Programs
               </Link>
-              <Link to="/arsenal" className="block text-steel-300 hover:text-white transition-colors text-sm">
+              <Link to="/arsenal" className="block text-steel-300 hover:text-white transition-colors text-base">
                 Equipment
               </Link>
-              <Link to="/coaches" className="block text-steel-300 hover:text-white transition-colors text-sm">
+              <Link to="/coaches" className="block text-steel-300 hover:text-white transition-colors text-base">
                 Our Coaches
               </Link>
             </div>
@@ -41,15 +41,15 @@ const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h3 className="font-semibold mb-4">Resources</h3>
+            <h3 className="font-semibold mb-4 text-lg">Resources</h3>
             <div className="space-y-2">
-              <Link to="/safety" className="block text-steel-300 hover:text-white transition-colors text-sm">
+              <Link to="/safety" className="block text-steel-300 hover:text-white transition-colors text-base">
                 Safety Guidelines
               </Link>
-              <Link to="/gallery" className="block text-steel-300 hover:text-white transition-colors text-sm">
+              <Link to="/gallery" className="block text-steel-300 hover:text-white transition-colors text-base">
                 Gallery
               </Link>
-              <Link to="/contact" className="block text-steel-300 hover:text-white transition-colors text-sm">
+              <Link to="/contact" className="block text-steel-300 hover:text-white transition-colors text-base">
                 Contact Us
               </Link>
             </div>
@@ -57,21 +57,21 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-4">Contact</h3>
-            <div className="space-y-2 text-sm text-steel-300">
+            <h3 className="font-semibold mb-4 text-lg">Contact</h3>
+            <div className="space-y-2 text-base text-steel-300">
               <p>📍 Olympic Sports Complex</p>
               <p>📞 +1 (555) 123-4567</p>
               <p>✉️ info@eliteshooting.com</p>
               <div className="flex space-x-4 mt-4">
-                <a href="#" className="hover:text-accent-red transition-colors">FB</a>
-                <a href="#" className="hover:text-accent-red transition-colors">IG</a>
-                <a href="#" className="hover:text-accent-red transition-colors">TW</a>
+                <a href="#" className="hover:text-accent-cyan transition-colors">FB</a>
+                <a href="#" className="hover:text-accent-cyan transition-colors">IG</a>
+                <a href="#" className="hover:text-accent-cyan transition-colors">TW</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-8 pt-8 text-center text-sm text-steel-300">
+        <div className="border-t border-white/10 mt-8 pt-8 text-center text-base text-steel-300">
           <p>© {currentYear} Elite Shooting Academy. All rights reserved. | Licensed & Certified Training Facility</p>
         </div>
       </div>

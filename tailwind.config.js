@@ -19,15 +19,23 @@ export default {
           300: '#a3a6ab',
         },
         accent: {
-          red: '#8B1E1E',
-          redLight: '#A52A2A',
+          cyan: '#00D9C0',
+          orange: '#FF6B35',
+          lime: '#CCFF00',
+          purple: '#6B2FF0',
         },
-        olive: '#6B6F4E',
         neutral: '#E5E7EB',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         heading: ['Montserrat', 'sans-serif'],
+      },
+      fontSize: {
+        'xs': ['0.875rem', { lineHeight: '1.5' }],
+        'sm': ['1rem', { lineHeight: '1.6' }],
+        'base': ['1.125rem', { lineHeight: '1.75' }],
+        'lg': ['1.25rem', { lineHeight: '1.75' }],
+        'xl': ['1.5rem', { lineHeight: '1.75' }],
       },
       animation: {
         'float': 'float 12s ease-in-out infinite',

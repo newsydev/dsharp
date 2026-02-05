@@ -34,12 +34,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Academy ID Badge */}
           <Link to="/" className="flex items-center space-x-4">
-            <div className="w-10 h-10 bg-accent-red border-2 border-accent-redLight flex items-center justify-center">
+            <div className="w-10 h-10 bg-accent-orange border-2 border-accent-orange flex items-center justify-center">
               <span className="text-lg font-bold font-heading">D</span>
             </div>
             <div className="hidden lg:block">
               {/* <div className="text-xs text-steel-400 uppercase tracking-wider">Facility</div> */}
-              <div className="text-sm font-heading font-bold text-neutral">Dsharp Shooters Academy</div>
+              <div className="text-base font-heading font-bold text-neutral">Dsharp Shooters Academy</div>
             </div>
           </Link>
 
@@ -55,12 +55,12 @@ const Navbar = () => {
                     : 'text-steel-400 hover:text-neutral'
                 }`}
               >
-                <span className="text-xs tracking-widest uppercase font-mono">{zone.code}</span>
-                <span className="text-sm font-heading font-semibold">{zone.name}</span>
+                <span className="text-sm tracking-widest uppercase font-mono">{zone.code}</span>
+                <span className="text-base font-heading font-semibold">{zone.name}</span>
                 <div className={`h-0.5 mt-1 transition-all duration-500 ${
                   location.pathname === zone.path 
-                    ? 'w-full bg-accent-red' 
-                    : 'w-0 group-hover:w-full bg-steel-500'
+                    ? 'w-full bg-accent-cyan' 
+                    : 'w-0 group-hover:w-full bg-accent-cyan/50'
                 }`} />
               </Link>
             ))}
@@ -69,12 +69,12 @@ const Navbar = () => {
           {/* Status Indicator */}
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-accent-red animate-pulse" />
-              <span className="text-xs text-steel-400 uppercase tracking-wider">Facility Active</span>
+              <div className="w-2 h-2 bg-accent-lime animate-pulse" />
+              <span className="text-sm text-accent-cyan uppercase tracking-wider">Facility Active</span>
             </div>
             <Link
               to="/contact"
-              className="bg-accent-red hover:bg-accent-redLight px-6 py-2 font-mono text-sm tracking-wider transition-all duration-500 border border-accent-redLight uppercase"
+              className="bg-accent-orange hover:bg-accent-orange/90 px-6 py-2 font-mono text-base tracking-wider transition-all duration-500 border border-accent-orange uppercase hover:shadow-lg hover:shadow-accent-orange/50"
             >
               Enroll
             </Link>
@@ -105,14 +105,14 @@ const Navbar = () => {
                 key={zone.path}
                 to={zone.path}
                 onClick={() => setZoneMenuOpen(false)}
-                className={`flex items-center justify-between py-3 border-b border-steel-700/50 transition-all duration-500 ${
+                className={`flex items-center justify-between py-4 border-b border-steel-700/50 transition-all duration-500 ${
                   location.pathname === zone.path
-                    ? 'text-neutral border-accent-red'
+                    ? 'text-accent-cyan border-accent-cyan'
                     : 'text-steel-400 hover:text-neutral'
                 }`}
               >
-                <span className="font-heading font-semibold">{zone.name}</span>
-                <span className="text-xs font-mono tracking-widest">{zone.code}</span>
+                <span className="font-heading font-semibold text-lg">{zone.name}</span>
+                <span className="text-sm font-mono tracking-widest">{zone.code}</span>
               </Link>
             ))}
           </div>

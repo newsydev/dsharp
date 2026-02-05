@@ -113,8 +113,8 @@ const Programs = () => {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 py-24 w-full relative z-10">
-          <div className="mb-8 border-l-2 border-accent-red pl-6">
-            <span className="text-xs tracking-widest uppercase font-mono text-steel-400">
+          <div className="mb-8 border-l-2 border-accent-cyan pl-6">
+            <span className="text-sm tracking-widest uppercase font-mono text-accent-cyan">
               Zone T-02 / Training Programs
             </span>
           </div>
@@ -123,15 +123,15 @@ const Programs = () => {
             TRAINING<br />LANES
           </h1>
 
-          <p className="text-xl text-steel-200 max-w-3xl leading-relaxed border-l border-steel-700 pl-6">
+          <p className="text-2xl text-steel-200 max-w-3xl leading-relaxed border-l border-steel-700 pl-6">
             Systematic skill progression from fundamentals to instructor certification. Each lane designed for specific competency development.
           </p>
 
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
             {['4 Lanes', '120 Hrs', '98% Pass Rate', '2.8K Trained'].map((stat, i) => (
-              <div key={i} className="border border-steel-700 p-4 text-center">
-                <div className="text-2xl font-bold font-heading text-accent-red">{stat.split(' ')[0]}</div>
-                <div className="text-xs text-steel-400 uppercase tracking-wider mt-1">{stat.split(' ').slice(1).join(' ')}</div>
+              <div key={i} className="border border-steel-700 p-6 text-center hover:border-accent-cyan transition-all duration-500">
+                <div className="text-4xl font-bold font-heading text-accent-orange">{stat.split(' ')[0]}</div>
+                <div className="text-sm text-steel-400 uppercase tracking-wider mt-2">{stat.split(' ').slice(1).join(' ')}</div>
               </div>
             ))}
           </div>
@@ -148,7 +148,7 @@ const Programs = () => {
                 onClick={() => setSelectedLane(selectedLane === lane.code ? null : lane.code)}
                 className={`p-6 lg:p-8 border transition-all duration-500 text-left ${
                   selectedLane === lane.code 
-                    ? 'bg-gunmetal-800 border-accent-red' 
+                    ? 'bg-gunmetal-800 border-accent-orange' 
                     : 'bg-gunmetal-900 border-steel-700 hover:border-steel-500'
                 }`}
               >
@@ -157,7 +157,7 @@ const Programs = () => {
                 <div className="text-sm text-steel-400 uppercase tracking-wider">{lane.level}</div>
                 <div className="mt-4 pt-4 border-t border-steel-700">
                   <div className="text-xs text-steel-500">{lane.duration}</div>
-                  <div className="text-2xl font-bold font-heading text-accent-red mt-1">{lane.price}</div>
+                  <div className="text-2xl font-bold font-heading text-accent-orange mt-1">{lane.price}</div>
                 </div>
               </button>
             ))}
@@ -188,7 +188,7 @@ const Programs = () => {
                       </div>
                       <div className="flex justify-between border-b border-steel-700 pb-3">
                         <span className="text-steel-400 text-sm">Investment</span>
-                        <span className="text-accent-red font-mono text-sm font-bold">{lane.price}</span>
+                        <span className="text-accent-orange font-mono text-sm font-bold">{lane.price}</span>
                       </div>
                       <div className="flex justify-between border-b border-steel-700 pb-3">
                         <span className="text-steel-400 text-sm">Status</span>
@@ -203,7 +203,7 @@ const Programs = () => {
 
                     <Link
                       to="/contact"
-                      className="mt-6 w-full bg-accent-red hover:bg-accent-redLight border border-accent-redLight py-3 text-center uppercase tracking-widest text-xs font-mono transition-all duration-500 block"
+                      className="mt-6 w-full bg-accent-orange hover:bg-accent-orange/90 border border-accent-orange py-3 text-center uppercase tracking-widest text-xs font-mono transition-all duration-500 block"
                     >
                       Enroll {lane.code}
                     </Link>
@@ -214,7 +214,7 @@ const Programs = () => {
                 <div className="lg:col-span-2 space-y-8">
                   <div>
                     <h3 className="text-3xl font-heading font-bold text-neutral mb-4">Mission Briefing</h3>
-                    <p className="text-steel-200 leading-relaxed border-l-2 border-accent-red pl-6">
+                    <p className="text-steel-200 leading-relaxed border-l-2 border-accent-cyan pl-6">
                       {lane.description}
                     </p>
                   </div>
@@ -241,8 +241,8 @@ const Programs = () => {
                     <div className="grid sm:grid-cols-2 gap-4">
                       {lane.outcomes.map((outcome, i) => (
                         <div key={i} className="border border-steel-700 p-4 flex items-start space-x-3">
-                          <div className="w-6 h-6 border border-accent-red flex items-center justify-center flex-shrink-0 mt-1">
-                            <span className="text-accent-red text-xs">✓</span>
+                          <div className="w-6 h-6 border border-accent-lime flex items-center justify-center flex-shrink-0 mt-1">
+                            <span className="text-accent-lime text-xs">✓</span>
                           </div>
                           <span className="text-steel-200 text-sm">{outcome}</span>
                         </div>
@@ -273,7 +273,7 @@ const Programs = () => {
             <div className="flex flex-col gap-4 w-full lg:w-auto">
               <Link
                 to="/contact"
-                className="w-full lg:w-auto text-center bg-accent-red hover:bg-accent-redLight px-12 py-6 border-2 border-accent-redLight uppercase tracking-widest text-xs lg:text-sm font-mono transition-all duration-500"
+                className="w-full lg:w-auto text-center bg-accent-orange hover:bg-accent-orange/90 px-12 py-6 border-2 border-accent-orange uppercase tracking-widest text-xs lg:text-sm font-mono transition-all duration-500"
               >
                 Schedule Consultation
               </Link>
