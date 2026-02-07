@@ -94,10 +94,14 @@ const Home = () => {
 
           {/* Grid Overlay */}
           <div className="absolute inset-0 pointer-events-none opacity-5">
-            <div className="w-full h-full" style={{
-              backgroundImage: `linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)`,
-              backgroundSize: '50px 50px'
-            }} />
+            <div 
+              className="w-full h-full" 
+              style={{
+                backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)',
+                backgroundSize: '50px 50px'
+              }}
+            >
+            </div>
           </div>
           
           {/* Subtle Vignette for Depth */}
@@ -263,9 +267,13 @@ const Home = () => {
           </Link>
         </div>
 
-        {/* 3D Object - Center Focus */}
-        <div className="w-full lg:w-3/5 h-[400px] lg:h-[600px] relative">
-          <Gun3DScene />
+        {/* Gun Image - Center Focus */}
+        <div className="w-full lg:w-3/5 h-[400px] lg:h-[600px] relative flex items-center justify-center bg-gunmetal-800">
+          <img 
+            src="/gun2.jpeg" 
+            alt="Arsenal Firearm Detail" 
+            className="max-w-full max-h-full object-contain p-8"
+          />
           
           {/* Technical Specs Overlay */}
           <div className="absolute bottom-4 right-4 lg:bottom-8 lg:right-8 bg-gunmetal-900/90 border border-steel-700 p-4 lg:p-6 backdrop-blur-sm max-w-[240px] lg:max-w-xs">

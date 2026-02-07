@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import Gun3DScene from '../components/Gun3DScene';
 
 const Arsenal = () => {
   const equipment = [
@@ -128,9 +127,13 @@ const Arsenal = () => {
             background: 'radial-gradient(circle at center, transparent 0%, rgba(15, 17, 21, 0.8) 100%)'
           }} />
 
-          {/* 3D Scene */}
-          <div className="w-full h-full absolute inset-0">
-            <Gun3DScene />
+          {/* Gun Image */}
+          <div className="w-full h-full absolute inset-0 flex items-center justify-center p-8">
+            <img 
+              src="/gun2.jpeg" 
+              alt="Arsenal Firearm" 
+              className="max-w-full max-h-full object-contain"
+            />
           </div>
 
           {/* Technical Overlay - Bottom Left */}
