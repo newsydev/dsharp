@@ -161,7 +161,7 @@ const Coaches = () => {
       <section className="bg-gunmetal-900 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16">
           <div className="space-y-1">
-            {instructors.map((instructor, idx) => (
+            {instructors.map((instructor) => (
               <div key={instructor.id} className="border border-steel-700 hover:border-steel-500 bg-gunmetal-800/50 transition-all duration-500 group">
                 
                 {/* HEADER ROW */}

@@ -1,18 +1,9 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Gun3DScene from '../components/Gun3DScene';
 
 const Home = () => {
-  const [scrollY, setScrollY] = useState(0);
   const horizontalScrollRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <div className="min-h-screen bg-gunmetal-900 text-neutral">

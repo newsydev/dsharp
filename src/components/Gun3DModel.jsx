@@ -11,8 +11,8 @@ const Gun3DModel = ({ modelPath = '/models/gun.glb' }) => {
   try {
     const gltf = useGLTF(modelPath);
     model = gltf.scene;
-  } catch (error) {
-    console.warn('GLB model not found, using fallback:', error);
+  } catch {
+    // GLB model not found, using fallback
   }
 
   useFrame((state) => {

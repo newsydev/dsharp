@@ -26,7 +26,7 @@ const Contact = () => {
     
     // Simulate API call
     setTimeout(() => {
-      console.log('Enrollment inquiry submitted:', formData);
+      // Form submitted successfully
       setFormStatus('success');
       setTimeout(() => {
         setFormStatus('idle');

@@ -5,7 +5,7 @@ import { Box, Cylinder, Sphere } from '@react-three/drei';
 const Pistol3D = () => {
   const groupRef = useRef();
 
-  useFrame((state) => {
+  useFrame(() => {
     if (groupRef.current) {
       groupRef.current.rotation.y += 0.005;
     }
@@ -32,7 +32,7 @@ const Pistol3D = () => {
 const Rifle3D = () => {
   const groupRef = useRef();
 
-  useFrame((state) => {
+  useFrame(() => {
     if (groupRef.current) {
       groupRef.current.rotation.y += 0.005;
     }
