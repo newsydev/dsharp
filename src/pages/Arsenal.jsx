@@ -225,7 +225,7 @@ const Arsenal = () => {
 
             {/* Equipment Grid */}
             <div className="space-y-4">
-              {section.items.map((item, itemIdx) => (
+              {section.items.map((item) => (
                 <div key={item.designation} className="border border-steel-700 hover:border-steel-500 bg-gunmetal-900/50 transition-all duration-500 group">
                   <div className="grid lg:grid-cols-5 gap-6 p-6 lg:p-8">
                     
