@@ -1,6 +1,8 @@
-import { useRef } from 'react';
+import { useRef, lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
-import Gun3DScene from '../components/Gun3DScene';
+
+// Lazy load 3D scene to split three.js bundle
+const Gun3DScene = lazy(() => import('../components/Gun3DScene'));
 
 const Home = () => {
   const horizontalScrollRef = useRef(null);
@@ -73,7 +75,11 @@ const Home = () => {
         {/* Right Panel - Live 3D Environment */}
         <div className="w-full lg:w-1/2 bg-gunmetal-800 relative min-h-[400px] lg:min-h-screen">
           <div className="absolute inset-0 flex items-center justify-center">
-            <Gun3DScene />
+            <Suspense fallback={
+              <div className="text-steel-400 text-sm uppercase tracking-widest">Loading 3D Model...</div>
+            }>
+              <Gun3DScene />
+            </Suspense>
           </div>
           
           {/* Technical Overlay */}
